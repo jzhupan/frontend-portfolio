@@ -1,32 +1,44 @@
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: black;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  img {
-    width: 30%;
-  }
-  
-  h2 {
-    text-align: center;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 10vw;
-      text-shadow: -0.04em 0.04em 0 #000,
-                    0.04em 0.04em 0 #000,
-                   0.04em -0.04em 0 #000,
-                  -0.04em -0.04em 0 #000;
-  }
-    
+
+
+
+
+
+
+.animation, .animation-layer{
+  height: 1000px;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation-layer{
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-y;
+  width: 100%;
+  position: absolute;
+}
+
+.animation-layer.parallax {
+  position: fixed;
+}
+
+
+
+#mountains{
+  background-image: url(./images/mountains.png);
+}
+#moon{
+  background-image: url(./images/moon1.png);
+}
+#rocks{
+  background-image: url(./images/rocks.png);
+}
+#sky{
+  background-image: url(./images/stars-sky.png);
+  background-repeat: repeat-y;
+}

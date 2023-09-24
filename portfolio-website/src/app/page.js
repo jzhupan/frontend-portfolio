@@ -17,23 +17,49 @@ export default function Home() {
 
   return (
     <div>
-      <Parallax pages={4} ref={ref} className='animation'
-      >
-        <ParallaxLayer offset={0} speed={1} factor={2} style={{
-          backgroundImage: `url(${moon1})`,
-          backgroundSize: 'cover'
-        }}>
+      <Parallax pages={4} 
+      ref={ref}
+      >        
+        <ParallaxLayer 
+        offset={0} 
+        speed={-0.5}  
+        >
+            <div className='animation-layer parallax' id='sky'> </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer 
+        offset={0.2} 
+        speed={-1} 
+        >
+          <div className='h2-box'>
+          <h2>Welcome to my portfolio website</h2>  
+          </div>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer 
+        offset={0.1} 
+        speed={-0.8} 
+        >
           <div className='animation-layer parallax' id='moon1'> </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1} factor={4} >
-          <div className='animation-layer parallax' id='rocks'> </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={1} factor={2} >
+
+        <ParallaxLayer 
+        offset={0} 
+        speed={-0.5}
+        >
+          
           <div className='animation-layer parallax' id='mountains'> </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={6} speed={1} factor={4} >
-          <div className='animation-layer parallax' id='sky'> </div>
+
+        <ParallaxLayer 
+        offset={0.2} 
+        speed={-0.5}  
+        >
+          <div className='animation-layer parallax' id='rocks'> </div>
         </ParallaxLayer>
+
+
       </Parallax>
       
     </div>
